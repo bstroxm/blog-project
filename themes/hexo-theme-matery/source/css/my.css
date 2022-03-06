@@ -1,1 +1,211 @@
 /* Here is your custom css styles. */
+/* 添加字体*/
+body {
+  font-family: 'Monaco', sans-serif !important;
+}
+
+/* 首页标题自定义样式 */
+.bg-cover .brand .title {
+  margin-bottom: 20px !important;
+}
+.bg-cover .description {
+  color: #eff;
+}
+header .side-nav .mobile-head .logo-desc {
+  color: #eff;
+}
+
+/* 首页箭头自定义 */
+.cover-btns a.scroll-down-effects {
+  border: 0;
+}
+.cover-btns a.scroll-down-effects i {
+  font-size: 1.8rem;
+}
+.cover-btns a:hover {
+  border: none;
+  background-color: unset;
+  box-shadow: none;
+}
+.scroll-down-effects {
+  -webkit-animation: scroll-down-effect 1.5s infinite;
+  -moz-animation: scroll-down-effect 1.5s infinite;
+  -o-animation: scroll-down-effect 1.5s infinite;
+  -ms-animation: scroll-down-effect 1.5s infinite;
+  animation: scroll-down-effect 1.5s infinite;
+}
+
+@-moz-keyframes scroll-down-effect {
+  0% {
+      top: 0;
+      opacity: 0.4;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+      filter: alpha(opacity=40);
+  }
+  50% {
+      top: -16px;
+      opacity: 1;
+      -ms-filter: none;
+      filter: none;
+  }
+  100% {
+      top: 0;
+      opacity: 0.4;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+      filter: alpha(opacity=40);
+  }
+}
+
+@-webkit-keyframes scroll-down-effect {
+  0% {
+      top: 0;
+      opacity: 0.4;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+      filter: alpha(opacity=40);
+  }
+  50% {
+      top: -16px;
+      opacity: 1;
+      -ms-filter: none;
+      filter: none;
+  }
+  100% {
+      top: 0;
+      opacity: 0.4;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+      filter: alpha(opacity=40);
+  }
+}
+
+@-o-keyframes scroll-down-effect {
+  0% {
+      top: 0;
+      opacity: 0.4;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+      filter: alpha(opacity=40);
+  }
+  50% {
+      top: -16px;
+      opacity: 1;
+      -ms-filter: none;
+      filter: none;
+  }
+  100% {
+      top: 0;
+      opacity: 0.4;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+      filter: alpha(opacity=40);
+  }
+}
+
+@keyframes scroll-down-effect {
+  0% {
+      top: 0;
+      opacity: 0.4;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+      filter: alpha(opacity=40);
+  }
+  50% {
+      top: -16px;
+      opacity: 1;
+      -ms-filter: none;
+      filter: none;
+  }
+  100% {
+      top: 0;
+      opacity: 0.4;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+      filter: alpha(opacity=40);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.bg-color {
+  background-image: linear-gradient(to left, #3ffff6 0%, #08df22 100%);
+}
+
+.bg-footer-color {
+  background: linear-gradient(to bottom, #0b1728 0%, #0b1728 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+  opacity: 0.8;
+}
+
+.progress-bar {
+  height: 4px;
+  background: linear-gradient(to right, #40454e 0%, #43474d 100%);
+  opacity: 0.7;
+}
+
+.bg-cover {
+  height: 50vh;
+  background-image: linear-gradient(to top, #3ffff6 0%, #08df22 100%);
+}
+
+.bg-cover:after {
+  -webkit-animation: unset;
+  animation: unset;
+}
+
+#sma {
+  box-shadow: #aaa 2px 5px 10px;
+  width: 38px;
+  height: 38px;
+  bottom: 100px;
+  padding-top: 15px;
+}
+#sma .fa-moon {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  font-size: 1.48rem !important;
+}
+#sma .fa-lightbulb {
+  position: absolute;
+  right: 12px;
+  bottom: 9px;
+  font-size: 1.5rem !important;
+}
+
+.top-scroll {
+  bottom: 50px;
+}
+.top-scroll .btn-floating.btn-large {
+  width: 38px;
+  height: 38px;
+  line-height: 42px;
+}
+.top-scroll .btn-floating i {
+  line-height: 38px;
+  font-size: 1.3rem;
+}
+
+#floating-toc-btn {
+  bottom: 150px !important;
+}
+#floating-toc-btn .btn-floating {
+  width: 38px !important;
+  height: 38px !important;
+  line-height: 42px;
+}
+#floating-toc-btn .btn-floating i {
+  line-height: 38px !important;
+}
+
+.post-statis .statis .count a {
+  color:#08df22; 
+}
+#aboutme .social-link a.social-link-github {
+  border: 1px solid #000000;
+  background: radial-gradient(#000000, #000000);
+}
+#aboutme .social-link a.social-link-email {
+  border: 1px solid #3f81de;
+  background: radial-gradient(#3f81de, #3f81de);
+}
+#aboutme .social-link a.social-link-rss {
+  border: 1px solid #08df22;
+  background: radial-gradient(#08df22, #08df22);
+}

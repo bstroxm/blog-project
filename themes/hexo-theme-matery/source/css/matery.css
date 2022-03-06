@@ -635,7 +635,7 @@ header .go-back i {
         background: rgba(233, 30, 99, 0.75);
         background: linear-gradient(45deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
-        background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
 }
 
@@ -681,7 +681,7 @@ header .go-back i {
         background: rgba(233, 30, 99, 0.75);
         background: linear-gradient(45deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
-        background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
 }
 
@@ -1905,6 +1905,36 @@ p.search-result-summary{
     padding-top: 15px;
     margin-bottom: 0;
     z-index: 998;
+}
+/* 深色模式按钮设置 */
+#sma {
+    background: #000;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 76px;
+    padding-top: 14px;
+    margin-bottom: 0;
+    z-index: 998;
+    cursor: pointer;
+}
+
+#sma .fa-moon {
+    font-size: 1.58rem !important;
+}
+#sma .fa-lightbulb {
+    font-size: 1.5rem !important;
+}
+
+.fa-moon:before {
+    content: "\f186";
+}
+.fa-comments:before {
+    content: "\f086";
 }
 
 .top-scroll .btn-floating {

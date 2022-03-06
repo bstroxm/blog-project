@@ -8,12 +8,18 @@
 
 <body>
     <%- partial('_partial/header') %>
-    <%- body %>
+    <% if (body.slice(0, 18) === "<\!-- 404-page -->\n") { %>
+        <%- body.slice(18) %>
+    <% } else { %>
+        <%- body %>
+    <% } %>
 
-    <%- partial('_partial/footer') %>
+    <% if (body.slice(0, 18) !== "<\!-- 404-page -->\n") { %>
+        <%- partial('_partial/footer') %>
+    <% } %>
 
     <%- partial('_partial/search') %>
-    <%- partial('_partial/back-top') %>
+    <%- partial('_partial/all_btn') %>
 
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.materialize) %>"></script>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.masonry) %>"></script>
@@ -26,9 +32,9 @@
         <!-- <script src='https://unpkg.com/mermaid@<%= theme.mermaid.version %>/dist/mermaid.min.js'></script> -->
         <script src='<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.mermaid) %>'></script>
         <script>
-          if (window.mermaid) {
-            mermaid.initialize({theme: 'forest'});
-          }
+            if (window.mermaid) {
+                mermaid.initialize({theme: 'forest'});
+            }
         </script>
     <% } %>
 
@@ -43,8 +49,8 @@
         </script>
     <% } %>
 
+    <% if (theme.snowdown.enable) { %>
     <!-- 雪花特效 -->
-    <% if (theme.snowdown.enable) { %> 
         <script type="text/javascript">
             // 只在桌面版网页启用特效
             var windowWidth = $(window).width();
@@ -54,8 +60,8 @@
         </script>
     <% } %>
 
+    <% if (theme.mouseStar.enable) { %>
     <!-- 鼠标星星特效 -->
-    <% if (theme.mouseStar.enable) { %> 
         <script type="text/javascript">
             // 只在桌面版网页启用特效
             var windowWidth = $(window).width();
@@ -131,8 +137,8 @@
     </script>
     <% } %>
 
-    <!--腾讯兔小巢-->
     <% if (theme.tuxiaochao.enable) { %>
+    <!--腾讯兔小巢-->
         <div style="position:fixed;bottom:125px;right:16px;cursor: pointer;">
             <a title="兔小巢" href="https://support.qq.com/products/<%- theme.tuxiaochao.productId %>"><i class="fa fa-comments fa-3x"  aria-hidden="true"></i></a>
         </div>
